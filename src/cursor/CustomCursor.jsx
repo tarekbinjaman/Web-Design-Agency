@@ -12,6 +12,15 @@ const CustomCursor = () => {
     const handleMouseMove = (e) => {
       mouseX.current = e.clientX;
       mouseY.current = e.clientY;
+
+      const target = e.target;
+      if (cursorRef.current) {
+        if (target.tagName === "A" || target.closest("a")) {
+          cursorRef.current.classList.add("shrink");
+        } else {
+          cursorRef.current.classList.remove("shrink");
+        }
+      }
     };
 
     document.addEventListener("mousemove", handleMouseMove);
@@ -23,10 +32,9 @@ const CustomCursor = () => {
       const velocity = Math.sqrt(dx * dx + dy * dy);
       const angle = Math.atan2(dy, dx) * (180 / Math.PI);
 
-      // Smooth interpolation with slower follow
-      currentX.current += dx * 0.1; // smaller = more delay
+      currentX.current += dx * 0.1;
       currentY.current += dy * 0.1;
-      const dynamicCap = Math.min(0.8, velocity / 200); 
+      const dynamicCap = Math.min(0.8, velocity / 200);
       const stretch = Math.min(velocity / 50, dynamicCap);
       const scaleX = 1 + stretch;
       const scaleY = 1 - stretch;
