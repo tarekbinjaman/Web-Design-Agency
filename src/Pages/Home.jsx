@@ -1,167 +1,72 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
-
 const Home = () => {
-    const { scrollYProgress } = useScroll();
-    const rawScale = useTransform(scrollYProgress, [0, 1], [1, 1.6]);
-
-    const scale = useSpring(rawScale, {
-        stiffness: 80,   // how stiff the spring is (lower = softer)
-        damping: 15,     // how much resistance (higher = more smooth stop)
-        mass: 1          // how heavy the object feels
+    const containerRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+      target: containerRef,
+      offset: ["start end", "end start"],
     });
-
-    return (
-        <div>
-            <h1>This is home</h1>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div
-                className='flex justify-center items-center border border-amber-300'
-                style={{
-                    height: '400px',
-                    width: '800px',
-                    margin: '0 auto',
-                    overflow: 'hidden',
-                    position: 'relative'
-                }}
-            >
-                <motion.img
-                    src="https://t4.ftcdn.net/jpg/06/81/35/49/360_F_681354997_LjEvGcOg8YeK58dsOfGn8wJV5IFvxI77.jpg"
-                    alt="Moving Image"
-                    style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        scale: scale,
-                    }}
-                />
-            </div>
-
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-            <div><p>ldsjl</p></div>
-        </div>
+  
+    // Pixel-based movement (safer for edge cases)
+    const rawX = useTransform(
+      scrollYProgress,
+      [0, 1],
+      [-40, 40] // Moves -40px to +40px
     );
-};
-
-export default Home;
+  
+    const x = useSpring(rawX, {
+      stiffness: 80,
+      damping: 50,
+      mass: 1,
+      restDelta: 0.001,
+    });
+  
+    return (
+      <div>
+        <h1>This is home</h1>
+        <div style={{ height: '100vh' }} />
+  
+        <div
+          ref={containerRef}
+          style={{
+            width: 800,
+            height: 400,
+            margin: '0 auto',
+            overflow: 'hidden',
+            position: 'relative',
+            border: '1px solid #f59e0b'
+          }}
+        >
+          <motion.div
+            style={{
+              width: '130%', // Extra buffer (from 120% to 130%)
+              height: '130%',
+              x,
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              translateX: '-50%', // Center the motion div
+              translateY: '-50%',
+            }}
+          >
+            <img
+              src="https://t4.ftcdn.net/jpg/06/81/35/49/360_F_681354997_LjEvGcOg8YeK58dsOfGn8wJV5IFvxI77.jpg"
+              alt="Moving Image"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            />
+          </motion.div>
+        </div>
+  
+        <div style={{ height: '100vh' }} />
+        <div className='flex justify-between'>
+          <div></div>
+          <div><p>Tarek</p></div>
+        </div>
+      </div>
+    );
+  };
+  export default Home;
