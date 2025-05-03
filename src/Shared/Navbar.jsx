@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import "../index.css"
+import { motion } from "framer-motion";
+import { IoIosArrowRoundForward } from 'react-icons/io';
+import { GoArrowUpRight } from 'react-icons/go';
+
 
 const Navbar = () => {
     const navLinkClass = ({ isActive }) => isActive ? 'text-blue-500 bg-slate-200' : '';
@@ -17,7 +21,7 @@ const Navbar = () => {
     const links = <>
         <nav className="bg-gray-800 p-4">
             <ul className="flex space-x-8 text-white">
-                <li className="relative group pb-1 hover:border-b-2 border-blue-400 transition-all duration-200">
+                <li className="relative group border-blue-400 transition-all duration-200">
                     <span className="cursor-pointer ">Services</span>
 
                     {/* Dropdown Items */}
@@ -44,24 +48,27 @@ const Navbar = () => {
 
     return (
 
-        <div className="navbar bg-base-100 shadow-sm lg:py-10 lg:px-18">
-            <div className="flex justify-between items-center w-full p-4">
+        <div className="w-full bg-base-100 py-4 lg:py-10 px-4 sm:px-6 lg:px-8 border-4 border-blue-500">
+            <div className="flex justify-between w-full border-2 border-amber-200">
                 <div className="flex items-center">
                     {/* Logo and Navlinks */}
                     <img src="/src/assets/icon/logo-light.png" className="w-[185px] block" alt="" />
                     <div className="ml-4 hidden lg:block">
                         {/* Navlinks */}
-                            {
-                                links
-                            }
+                        {
+                            links
+                        }
                     </div>
                 </div>
 
                 {/* Sidebar / Hamburger */}
                 <div>
-                    <button onClick={toggleSidebar} className="text-3xl">
+                    <button onClick={toggleSidebar} className="text-3xl lg:hidden">
                         <FaBars />
                     </button>
+
+                    {/* test */}
+                    <button className="group hidden lg:block relative h-12 rounded-full border border-neutral-200 bg-transparent px-4 text-neutral-950"><span className="relative inline-flex overflow-hidden"><div className=" transition duration-1000 group-hover:-translate-y-[120%] group-hover:skew-y-20 flex items-center">Hover fme <GoArrowUpRight /></div><div className="absolute translate-y-[110%] skew-y-12 transition duration-1000 group-hover:translate-y-0 group-hover:skew-y-0 flex items-center">Hover me <GoArrowUpRight /></div></span></button>
                 </div>
             </div>
             {/* Sidebar */}
