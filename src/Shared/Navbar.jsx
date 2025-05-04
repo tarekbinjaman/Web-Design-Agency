@@ -20,7 +20,7 @@ const Navbar = () => {
     // nav links
     const links = <>
         <nav className=" p-4">
-            <ul className="flex items-center space-x-8 text-black text-xl font-semibold">
+            <ul className="flex items-center space-x-8 text-black text-xl font-normal">
             <li className='relative group inline-block cursor-pointer transition-all duration-200'>
                     <span className={`border-b-2 border-amber-200 flex gap-2 items-center`}>Home <GoChevronDown /></span>
                     {/* Dropdown Items */}
@@ -56,7 +56,7 @@ const Navbar = () => {
 
     return (
 
-        <div className="w-full bg-base-100 py-4 lg:py-9 px-4 sm:px-8 lg:px-[78px] ">
+        <div className="navbar w-full bg-base-100 py-4 lg:py-9 px-4 sm:px-8 lg:px-[78px] ">
             <div className="flex justify-between w-full items-center">
                 <div className="flex items-center gap-8">
                     {/* Logo and Navlinks */}
