@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import "../index.css"
 import { motion } from "framer-motion";
 import { IoIosArrowRoundForward } from 'react-icons/io';
-import { GoArrowUpRight } from 'react-icons/go';
+import { GoArrowUpRight, GoChevronDown } from 'react-icons/go';
 
 
 const Navbar = () => {
@@ -15,32 +15,40 @@ const Navbar = () => {
     };
 
     // underline effect stored
-    const underlineEffect = 'after:block after:h-[2px] after:bg-blue-500 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left group-hover:after:scale-x-100';
+    const underlineEffect = 'after:block after:h-[2px] after:bg-amber-200 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left group-hover:after:scale-x-100';
 
     // nav links
     const links = <>
-        <nav className="bg-gray-800 p-4">
-            <ul className="flex space-x-8 text-white">
-                <li className="relative group border-blue-400 transition-all duration-200">
-                    <span className="cursor-pointer ">Services</span>
-
+        <nav className=" p-4">
+            <ul className="flex items-center space-x-8 text-black text-xl font-semibold">
+            <li className='relative group inline-block cursor-pointer transition-all duration-200'>
+                    <span className={`border-b-2 border-amber-200 flex gap-2 items-center`}>Home <GoChevronDown /></span>
                     {/* Dropdown Items */}
-                    <ul className="absolute left-0 mt-2 bg-gray-700 rounded-md overflow-hidden 
+                    <ul className="absolute left-0 mt-2 rounded-md overflow-hidden 
                          opacity-0 invisible 
                          group-hover:visible group-hover:opacity-100 
-                         group-hover:translate-x-0 -translate-x-2 
-                         transition-all duration-300 ease-in-out shadow-lg">
-                        <li className="px-4 py-2 hover:bg-gray-600 cursor-pointer">Web Design</li>
-                        <li className="px-4 py-2 hover:bg-gray-600 cursor-pointer">App Development</li>
-                        <li className="px-4 py-2 hover:bg-gray-600 cursor-pointer">SEO</li>
+                         group-hover:translate-x-[-20px] -translate-x-2 
+                         transition-all duration-300 ease-in-out shadow-lg text-[14px]">
+                        <li className={`pl-4 pr-32 py-6   cursor-pointer border-b border-black/30 whitespace-nowrap`}> <span className='border-b-2 border-amber-200'>Home Light</span></li>
+                        <li className={`pl-4 pr-32 py-6 border-b border-black/30 whitespace-nowrap`}>Home Dark</li>
+                        <li className={`pl-4 pr-32 py-6 cursor-pointer whitespace-nowrap`}>Home Rtl</li>
                     </ul>
+                </li>
+                <li className='group cursor-pointer flex gap-2 items-center'>
+                    <span className={`${underlineEffect} `}>About us </span><GoChevronDown />
+                </li>
+                <li className="relative group border-blue-400 flex gap-2 items-center">
+                    <span className={`cursor-pointer ${underlineEffect}`}>Services</span><GoChevronDown />
+
                 </li>
 
                 {/* More nav items if you want */}
-                <li className='group inline-block cursor-pointer'>
-                    <span className={underlineEffect}>About</span>
+                <li className='group cursor-pointer flex gap-2 items-center'>
+                    <span className={`cursor-pointer ${underlineEffect}`}>Blog </span><GoChevronDown />
                 </li>
-                <li>Contact</li>
+                <li className={`group cursor-pointer flex gap-2 items-center`}>
+                    <span className={`cursor-pointer ${underlineEffect}`}> Let's talk </span><GoChevronDown />
+                </li>
             </ul>
         </nav>
     </>
@@ -48,11 +56,11 @@ const Navbar = () => {
 
     return (
 
-        <div className="w-full bg-base-100 py-4 lg:py-10 px-4 sm:px-6 lg:px-8 border-4 border-blue-500">
-            <div className="flex justify-between w-full border-2 border-amber-200">
-                <div className="flex items-center">
+        <div className="w-full bg-base-100 py-4 lg:py-9 px-4 sm:px-8 lg:px-[78px] ">
+            <div className="flex justify-between w-full items-center">
+                <div className="flex items-center gap-8">
                     {/* Logo and Navlinks */}
-                    <img src="/src/assets/icon/logo-light.png" className="w-[185px] block" alt="" />
+                    <img src="/src/assets/icon/logo-light.png" className="w-[182px] block" alt="" />
                     <div className="ml-4 hidden lg:block">
                         {/* Navlinks */}
                         {
@@ -68,7 +76,7 @@ const Navbar = () => {
                     </button>
 
                     {/* test */}
-                    <button className="group hidden lg:block relative h-12 rounded-full border border-neutral-200 bg-transparent px-4 text-neutral-950"><span className="relative inline-flex overflow-hidden"><div className=" transition duration-1000 group-hover:-translate-y-[120%] group-hover:skew-y-20 flex items-center">Hover fme <GoArrowUpRight /></div><div className="absolute translate-y-[110%] skew-y-12 transition duration-1000 group-hover:translate-y-0 group-hover:skew-y-0 flex items-center">Hover me <GoArrowUpRight /></div></span></button>
+                    <button className="group hidden lg:block relative h-12 bg-transparent px-4 text-neutral-950 " style={{backgroundColor: "rgb(227, 255, 117)"}}><span className="relative inline-flex overflow-hidden"><div className=" transition duration-1000 group-hover:-translate-y-[120%] group-hover:skew-y-10 flex items-center gap-2 font-semibold">Discuss the project <GoArrowUpRight className='font-bold' /></div><div className="absolute translate-y-[110%] skew-y-6 transition duration-1000 group-hover:translate-y-0 group-hover:skew-y-0 flex items-center gap-2 font-semibold">Discuss the project <GoArrowUpRight className='font-bold' /></div></span></button>
                 </div>
             </div>
             {/* Sidebar */}
