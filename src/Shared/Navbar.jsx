@@ -24,7 +24,7 @@ const Navbar = () => {
             <li className='relative group inline-block cursor-pointer transition-all duration-200'>
                     <span className={`border-b-2 border-amber-200 flex gap-2 items-center`}>Home <GoChevronDown /></span>
                     {/* Dropdown Items */}
-                    <ul className="absolute left-0 mt-2 rounded-md overflow-hidden 
+                    <ul className="absolute  left-0 mt-2 rounded-md overflow-hidden 
                          opacity-0 invisible 
                          group-hover:visible group-hover:opacity-100 
                          group-hover:translate-x-[-20px] -translate-x-2 
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-8">
                     {/* Logo and Navlinks */}
                     <img src="/src/assets/icon/logo-light.png" className="w-[182px] block" alt="" />
-                    <div className="ml-4 hidden lg:block">
+                    <div className="ml-12 hidden lg:block">
                         {/* Navlinks */}
                         {
                             links
