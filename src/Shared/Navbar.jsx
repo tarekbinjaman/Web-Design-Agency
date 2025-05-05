@@ -21,14 +21,14 @@ const Navbar = () => {
     const links = <>
         <nav className=" p-4">
             <ul className="flex items-center space-x-8 text-black text-xl font-normal">
-            <li className='relative group inline-block cursor-pointer transition-all duration-200'>
+            <li className='relative group inline-block cursor-pointer transition-all duration-200 z-50'>
                     <span className={`border-b-2 border-amber-200 flex gap-2 items-center`}>Home <GoChevronDown /></span>
                     {/* Dropdown Items */}
-                    <ul className="absolute  left-0 mt-2 rounded-md overflow-hidden 
+                    <ul className="absolute z-50 left-0 mt-2 rounded-md overflow-hidden 
                          opacity-0 invisible 
                          group-hover:visible group-hover:opacity-100 
                          group-hover:translate-x-[-20px] -translate-x-2 
-                         transition-all duration-300 ease-in-out shadow-lg text-[14px]">
+                         transition-all duration-300 ease-in-out shadow-lg text-[14px] bg-white">
                         <li className={`pl-4 pr-32 py-6   cursor-pointer border-b border-black/30 whitespace-nowrap`}> <span className='border-b-2 border-amber-200'>Home Light</span></li>
                         <li className={`pl-4 pr-32 py-6 border-b border-black/30 whitespace-nowrap`}>Home Dark</li>
                         <li className={`pl-4 pr-32 py-6 cursor-pointer whitespace-nowrap`}>Home Rtl</li>
@@ -60,7 +60,7 @@ const Navbar = () => {
             <div className="flex justify-between w-full items-center">
                 <div className="flex items-center gap-8">
                     {/* Logo and Navlinks */}
-                    <img src="/src/assets/icon/logo-light.png" className="w-[182px] block" alt="" />
+                    <img src="/src/assets/icon/logo-light.png" className="lg:w-[182px] w-[120px] block" alt="" />
                     <div className="ml-12 hidden lg:block">
                         {/* Navlinks */}
                         {
