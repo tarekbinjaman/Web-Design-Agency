@@ -4,6 +4,9 @@ module.exports = {
       extend: {
         fontFamily: {
           kanit: ['Kanit', 'sans-serif'],
+          },
+          backgroundImage: {
+            'service-bg': "url('https://i.ibb.co/FbCXXRr/service-bg.jpg')",
           }
       },
     },

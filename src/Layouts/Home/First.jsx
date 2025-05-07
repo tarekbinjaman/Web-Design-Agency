@@ -4,8 +4,8 @@ const First = () => {
     return (
         <div className='lg:w-[70%] mx-auto lg:mt-22 mt-10 px-4'>
             <div className='lg:flex justify-between'>
-                <div className="relative">
-                    <h1 className='lg:text-[70px]/[85px] text-[36px]/[50px] font-bold lg:absolute z-10 whitespace-nowrap'>
+                <div className="">
+                    <h1 className='lg:text-[70px]/[85px] text-[36px]/[50px] font-bold '>
                         All-in-one solution <br />
                         Unlimited design & <br />
                         development
