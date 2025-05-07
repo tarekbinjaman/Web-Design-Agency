@@ -9,7 +9,7 @@ const Third = () => {
         <div className='bg-cover h-[1078px]'
             style={{ backgroundImage: 'url("https://i.ibb.co.com/FbCXXRr4/service-bg.jpg")' }}
         >
-            <div className='lg:min-h-[65vh] md:min-h-[70vh] min-h-[60vh]' />
+            <div className='lg:min-h-[55vh] md:min-h-[70vh] min-h-[60vh]' />
             {/* parent div */}
 
 
