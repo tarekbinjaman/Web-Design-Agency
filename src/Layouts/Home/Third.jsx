@@ -6,7 +6,7 @@ import img4 from '../../assets/img/s-4.svg'
 
 const Third = () => {
     return (
-        <div className='bg-cover h-[1078px]'
+        <div className='bg-cover md:h-[1078px] h-[800px]'
             style={{ backgroundImage: 'url("https://i.ibb.co.com/FbCXXRr4/service-bg.jpg")' }}
         >
             <div className='lg:min-h-[55vh] md:min-h-[70vh] min-h-[60vh]' />
