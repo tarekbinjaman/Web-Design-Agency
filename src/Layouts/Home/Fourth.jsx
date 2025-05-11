@@ -8,18 +8,18 @@ import { GoArrowRight } from 'react-icons/go';
 const Fourth = () => {
     return (
         <div>
-            <div className="px-20 py-40 flex items-start gap-10 ]">
+            <div className="lg:px-20 py-40 lg:flex items-start gap-10 ]">
                 {/* first div */}
-                <div className="sticky top-10 flex-2/5">
-                    <h2 className="text-[100px]/[110px] font-semibold text-neutral-800 w-[400px]">
+                <div className="lg:sticky top-10 lg:flex-2/5">
+                    <h2 className="md:text-[100px]/[110px] text-[36px]/[43px] font-semibold text-neutral-800 w-[400px]">
                         Award winning creativity
                     </h2>
                 </div>
                 {/* cards */}
-                <div className='flex flex-col gap-y-16'>
+                <div className='lg:flex flex-col gap-y-16'>
                     {/* second div */}
                     <div>
-                        <div className='ml-28 group'>
+                        <div className='lg:ml-28 group'>
                             <div className='w-[641px]'>
                                 <div className='w-[641px] h-[490px] overflow-hidden'>
                                     <img className='w-[641px] h-[490px] object-cover 
@@ -41,7 +41,7 @@ const Fourth = () => {
                         </div>
                     </div>
                     {/* third div */}
-                    <div className='grid grid-cols-2 gap-x-16'>
+                    <div className='lg:grid grid-cols-2 gap-x-16'>
                         {/* 1 */}
                         <div className='w-[494px] group'>
                             <div className='w-[494px] h-[495px] overflow-hidden'>
