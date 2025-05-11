@@ -19,44 +19,86 @@ const Fourth = () => {
                 <div className='flex flex-col gap-y-16'>
                     {/* second div */}
                     <div>
-                        <div className='ml-28'>
-                            <img className='w-[641px] object-cover' src={img1} alt="" />
-                            <h3 className='text-[30px] font-semibold'>Mobile app design</h3>
-                            <p className='text-[14px] text-black/25 font-semibold'>Design - 2025</p>
+                        <div className='ml-28 group'>
+                            <div className='w-[641px]'>
+                                <div className='w-[641px] h-[490px] overflow-hidden'>
+                                    <img className='w-[641px] h-[490px] object-cover 
+                                        transition-all duration-400 
+                                        group-hover:scale-105' src={img1} alt="" />
+                                </div>
+                                <div className='flex justify-between items-center'>
+                                    <div>
+                                        <h3 className='text-[30px] font-semibold'>Mobile app design</h3>
+                                        <p className='text-[14px] text-black/25 font-semibold'>Design - 2025</p>
+                                    </div>
+                                    <div className='group-hover:translate-x-8 duration-300 mr-[32px]'>
+                                        <button className='bg-yellow-200 opacity-0 group-hover:opacity-100 transition-all ease-in px-7 py-3 rounded-4xl '>
+                                            <GoArrowRight className='text-xl' />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {/* third div */}
                     <div className='grid grid-cols-2 gap-x-16'>
-                        <div>
-                            <img className='w-[494px] h-[495px] object-cover' src={img2} alt="" />
-                            <h3 className='text-[30px] font-semibold'>Branding design</h3>
-                            <p className='text-[14px] text-black/25 font-semibold'>Design - 2025</p>
+                        {/* 1 */}
+                        <div className='w-[494px] group'>
+                            <div className='w-[494px] h-[495px] overflow-hidden'>
+                                <img className='w-[494px] h-[495px] object-cover
+                                          transition-all duration-400 
+                                          group-hover:scale-105' src={img2} alt="" />
+                            </div>
+                            <div className='flex justify-between items-center'>
+                                <div>
+                                    <h3 className='text-[30px] font-semibold'>Branding design</h3>
+                                    <p className='text-[14px] text-black/25 font-semibold'>Design - 2025</p>
+                                </div>
+                                <div className='group-hover:translate-x-8 duration-300 mr-[32px]'>
+                                    <button className='bg-yellow-200 opacity-0 group-hover:opacity-100 transition-all ease-in px-7 py-3 rounded-4xl '>
+                                        <GoArrowRight className='text-xl' />
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img className='w-[494px] h-[495px] object-cover' src={img3} alt="" />
-                            <h3 className='text-[30px] font-semibold'>Web development</h3>
-                            <p className='text-[14px] text-black/25 font-semibold'>Design - 2025</p>
+                        {/* 2 */}
+                        <div className='w-[494px] group'>
+                            <div className='w-[494px] h-[495px] overflow-hidden'>
+                                <img className='w-[494px] h-[495px] object-cover transition-all duration-400 
+              group-hover:scale-105' src={img3} alt="" />
+                            </div>
+                            <div className='flex justify-between items-center'>
+                                <div>
+                                    <h3 className='text-[30px] font-semibold'>Web development</h3>
+                                    <p className='text-[14px] text-black/25 font-semibold'>Design - 2025</p>
+                                </div>
+                                <div className='group-hover:translate-x-8 duration-300 mr-[32px]'>
+                                    <button className='bg-yellow-200 opacity-0 group-hover:opacity-100 transition-all ease-in px-7 py-3 rounded-4xl '>
+                                        <GoArrowRight className='text-xl' />
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {/* fourth div */}
-                    <div className='ml-32 group border border-amber-300 inline-block'>
-                        <div  className='w-[647px]'>
-                        <div className='w-[647px] h-[497px] overflow-hidden'>
-                        <img className='w-[647px] h-[497px] object-cover 
+                    <div className='ml-32 group'>
+                        <div className='w-[647px]'>
+                            <div className='w-[647px] h-[497px] overflow-hidden'>
+                                <img className='w-[647px] h-[497px] object-cover 
               transition-all duration-400 
               group-hover:scale-105' src={img4} alt="" />
-                        </div>
-                        <div className='flex justify-between items-center'>
-                            <div>
-                        <h3 className='text-[30px] font-semibold'>Web development</h3>
-                        <p className='text-[14px] text-black/25 font-semibold'>Design - 2025</p>
                             </div>
-                            <div className='group-hover:translate-x-8 duration-300 mr-[32px]'>                                
-                        <button className='bg-yellow-200 opacity-0 group-hover:opacity-100 transition-all ease-in px-7 py-3 rounded-4xl '>
-                        <GoArrowRight className='text-xl' />
-                        </button>
+                            <div className='flex justify-between items-center'>
+                                <div>
+                                    <h3 className='text-[30px] font-semibold'>Web development</h3>
+                                    <p className='text-[14px] text-black/25 font-semibold'>Design - 2025</p>
+                                </div>
+                                <div className='group-hover:translate-x-8 duration-300 mr-[32px]'>
+                                    <button className='bg-yellow-200 opacity-0 group-hover:opacity-100 transition-all ease-in px-7 py-3 rounded-4xl '>
+                                        <GoArrowRight className='text-xl' />
+                                    </button>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
