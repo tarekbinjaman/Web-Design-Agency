@@ -16,7 +16,7 @@ const Fifth = () => {
     return (
         <div className='absolute z-40'>
             <div
-                className='flex justify-center  items-center border border-amber-300 w-full lg:h-[750px] h-[403px] overflow-hidden'
+                className='flex justify-center  items-center w-full lg:h-[750px] h-[403px] overflow-hidden'
                 style={{
                     margin: '0 auto',
                     overflow: 'hidden',
