@@ -8,7 +8,7 @@ import { GoArrowRight } from 'react-icons/go';
 const Fourth = () => {
     return (
         <div>
-            <div className="lg:px-20 px-3 lg:py-40 lg:flex items-start gap-10 ]">
+            <div className="lg:px-20 px-3 lg:pt-40 lg:flex items-start gap-10 ]">
                 {/* first div */}
                 <div className="lg:sticky top-10 lg:flex-2/5 py-10">
                     <h2 className="md:text-[100px]/[110px] text-[36px]/[43px] font-semibold text-neutral-800 lg:w-[400px] w-[200px]">

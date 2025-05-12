@@ -1,4 +1,6 @@
-import LeftRight from '../Components/Left-Right';
+
+import Marquee1 from '../Components/Marquee1';
+import Fifth from '../Layouts/Home/Fifth';
 import First from '../Layouts/Home/First';
 import Fourth from '../Layouts/Home/Fourth';
 import Second from '../Layouts/Home/Second';
@@ -17,8 +19,12 @@ const Home = () => {
       <div>
         <Fourth />
       </div>
-
-  
+      <div>
+        <Marquee1 />
+      </div>
+      <div>
+        <Fifth />
+      </div>
       </div>
   );
 };

@@ -7,7 +7,10 @@ module.exports = {
           },
           backgroundImage: {
             'service-bg': "url('https://i.ibb.co/FbCXXRr/service-bg.jpg')",
-          }
+          },
+                animation: {
+        'spin-slow': 'spin 20s linear infinite',
+      },
       },
     },
     plugins: [],
