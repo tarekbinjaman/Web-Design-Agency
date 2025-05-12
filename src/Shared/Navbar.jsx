@@ -60,7 +60,7 @@ const Navbar = () => {
             <div className="flex justify-between w-full items-center">
                 <div className="flex items-center gap-8">
                     {/* Logo and Navlinks */}
-                    <img src="/src/assets/icon/logo-light.png" className="lg:w-[182px] w-[120px] block" alt="" />
+                    <img src="https://i.ibb.co/tpLS5LMG/logo-light.png" className="lg:w-[182px] w-[120px] block" alt="" />
                     <div className="ml-12 hidden lg:block">
                         {/* Navlinks */}
                         {
