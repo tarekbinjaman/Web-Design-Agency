@@ -14,11 +14,10 @@ const Fifth = () => {
         mass: 1.8         // Mass
     });
     return (
-        <div>
+        <div className='absolute z-40'>
             <div
-                className='flex justify-center items-center border border-amber-300 w-full overflow-hidden'
+                className='flex justify-center  items-center border border-amber-300 w-full lg:h-[750px] h-[403px] overflow-hidden'
                 style={{
-                    height:'750px' ,
                     margin: '0 auto',
                     overflow: 'hidden',
                     position: 'relative'
@@ -26,11 +25,11 @@ const Fifth = () => {
             >
                 <motion.img
                     src={img}
+                    className='object-cover object-left'
                     alt="Moving Image"
                     style={{
                         width: '140%',
                         height: '140%',
-                        objectFit: 'cover',
                         y: y,  // Apply vertical movement (upward shift)
                     }}
                 />

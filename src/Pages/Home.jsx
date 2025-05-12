@@ -19,10 +19,10 @@ const Home = () => {
       <div>
         <Fourth />
       </div>
-      <div>
+      <div className='relative lg:mt-[40px] lg:mb-[200px]'>
         <Marquee1 />
       </div>
-      <div>
+      <div className='lg:mt-[280px] mt-[100px] relative'>
         <Fifth />
       </div>
       </div>
